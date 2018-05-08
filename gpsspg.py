@@ -32,7 +32,7 @@ def get_latlng(address):
         print json_res['info']
 
 def get_address_list():
-    infile='d:\hedge\Desktop\\address_list.txt'
+    infile='.\\address_list.txt'
     f=open(infile,'r')
     addr=f.readline()
     while addr :
