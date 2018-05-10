@@ -1,7 +1,7 @@
 # encoding:utf-8
 import sys
 import os
-
+'''
 file_name = 'all.csv'
 
 path= os.path.dirname(os.path.abspath("__file__"))
@@ -11,3 +11,7 @@ f = open(path+'\data\\'+file_name)
 
 print f.readline()
 f.close()
+'''
+
+a=',,,241,123,'
+print a.split(',')

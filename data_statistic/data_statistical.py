@@ -18,7 +18,7 @@ def get_data():
             break
         infos = line.split(',')
         dep_time = infos[6]
-        if re.search(':',dep_time):
+        if re.search(':',dep_time):  # get the departure  time
             data_list.append(line)
             #print line
     return data_list
