@@ -35,7 +35,7 @@ def get_latlng(address):
         print json_res['info']
 
 def get_address_list():
-    infile='.\\address_list.txt'
+
     f=open(infile,'r')
     addr=f.readline()
     while addr :
@@ -48,6 +48,8 @@ def get_address_list():
             get_latlng(add)
             #time.sleep(0.1)
 
+
+infile = 'address.txt'
 output_file_name='latlng2.csv'
 f=open(output_file_name,'w')
 f.truncate()
