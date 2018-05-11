@@ -8,7 +8,7 @@ import time
 path = os.path.abspath(os.path.join(os.path.dirname("__file__"), os.path.pardir))
 infile=path+'\\data\\final.csv'
 #out_file=path+'\\get_dist\\dist_resp_out.csv'
-out_file='d:dist_info_out.csv'
+out_file='d:dist_info_out_test.csv'
 
 
 def output(string):
@@ -25,6 +25,7 @@ def readfile():
     return full_text
 
 
+# let the time changed to minutes
 def min_time(atime):
     hour=int(re.findall('\d+(?=:)',atime)[0])
     min=int(re.findall('(?<=:)\d+',atime)[0])
@@ -76,17 +77,16 @@ def renew_out_file():
         f.close()
 
 
-for date in range(20,28):
+for date in range(20,22):
     print '###################'
     print 'Date  =  ',date
     print '###################'
 
-    #renew_out_file()
+    renew_out_file()
 
     # list=[no,arrive_time, latitude and longitude ]
     termimal_list=get_termimal_list(date)
     malist=len(termimal_list)
-
     for j in range(malist):  # the distance from airport to terminal
         print 'From Airport To Point',j
         info=getroad('airport',termimal_list[j][2])
