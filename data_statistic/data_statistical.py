@@ -3,13 +3,14 @@ import re
 
 data_list = []
 car_list = [[[] for i in range(60)] for j in range(7)]
-print car_list
+#print car_list
 
 
 def get_data():
     import os
     path = os.path.abspath(os.path.join(os.path.dirname("__file__"), os.path.pardir))
-    data_file = path + '\\data\\all.csv'
+    data_file = path + '\\data\\final.csv'
+    #data_file='data_set.csv'
     f = open(data_file, 'r')
     line = f.readline()
     '2018 / 4 / 20, 1, 新城市广场, 1, 9:52, 10:18, 四川省成都市青羊区新城市广场, 104.057651, 30.67383,'

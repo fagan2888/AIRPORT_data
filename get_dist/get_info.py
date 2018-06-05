@@ -6,7 +6,7 @@ import time
 
 
 path = os.path.abspath(os.path.join(os.path.dirname("__file__"), os.path.pardir))
-infile=path+'\\data\\final.csv'
+infile=path+'\\data\\oneday.csv'
 #out_file=path+'\\get_dist\\dist_resp_out.csv'
 out_file='d:dist_info_out_test.csv'
 
@@ -77,11 +77,11 @@ def renew_out_file():
         f.close()
 
 
-for date in range(20,22):
+for date in range(20,21):
     print '###################'
     print 'Date  =  ',date
     print '###################'
-
+    out_file = 'dist_info_out_test.csv'
     renew_out_file()
 
     # list=[no,arrive_time, latitude and longitude ]
