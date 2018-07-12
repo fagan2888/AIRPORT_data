@@ -1,0 +1,3 @@
+直接存储网页返回值的文件dist_info_out.csv由于占空间太大被删除了，需要时可再次运行get_info.py获取
+
+文件大概内容参照dist_info_out_test.csv，为22日一天的数据

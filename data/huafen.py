@@ -1,3 +1,5 @@
+# this file used to cut the district into 10*10 squares
+
 f=open('final.csv','r')
 
 all_line=f.readlines()

@@ -1,0 +1,5 @@
+gps_amap,gps_tecent分别获取高德和腾讯的gps数据
+
+compare文件比较两者的差距，如果差距很小则认为该地址正确，否则需要人工核对
+
+json_process为处理网页返回的json字段的测试文件,可以忽略

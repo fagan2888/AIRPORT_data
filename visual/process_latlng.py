@@ -1,9 +1,10 @@
+#coding:utf-8
 import os
 import re
-
+# 只是用来将经纬度数据稍作调整，转变为高德需要的格式
 ####################################
 #  output files for amap data visual
-#  this is to visual the point
+#  this file is  used to visual the point
 ####################################
 path = os.path.abspath(os.path.join(os.path.dirname("__file__"), os.path.pardir))
 
